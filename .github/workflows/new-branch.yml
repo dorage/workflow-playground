@@ -11,11 +11,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: npm src/index.js
+      - run: node src/index.js
       - run: git add .
       - run: git commit .
       - run: git push
