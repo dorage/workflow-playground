@@ -17,5 +17,5 @@ jobs:
           node-version: 20
       - run: node src/index.js
       - run: git add .
-      - run: git commit .
+      - run: git commit -m 'add txt'
       - run: git push
