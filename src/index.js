@@ -1,4 +1,4 @@
 const fs = require('fs');
 
-fs.writeFile('./test.txt','hello, workflow', {encoding:'utf8'});
+fs.writeFileSync('./test.txt','hello, workflow', {encoding:'utf8'});
 
