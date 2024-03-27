@@ -1,4 +1,4 @@
-# See https://zellwk.com/blog/github-actions-deploy/ an explanation of this code
+# See http\gs://zellwk.com/blog/github-actions-deploy/ an explanation of this code
 name: deploy
 on:
   push:
@@ -21,4 +21,4 @@ jobs:
           git config user.email ${{ secrets.EMAIL }}
           git add .
           git commit -m 'add txt'
-          git push
+          git push origin action-create-txt
