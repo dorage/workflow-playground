@@ -1,0 +1,12 @@
+# See https://zellwk.com/blog/github-actions-deploy/ an explanation of this code
+name: first_progress
+on:
+  workflow_run:
+    workflows: [first]
+    types: [in_progress]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-20.04
+    steps:
+      - run: echo "first is in progress"

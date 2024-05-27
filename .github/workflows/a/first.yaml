@@ -1,0 +1,11 @@
+# See https://zellwk.com/blog/github-actions-deploy/ an explanation of this code
+name: first
+on:
+  push:
+    - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-20.04
+    steps:
+      - run: echo "first"
