@@ -2,7 +2,8 @@
 name: first
 on:
   push:
-    - main
+    branches:
+      - main
 
 jobs:
   build-and-deploy:
